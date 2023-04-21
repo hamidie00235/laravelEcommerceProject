@@ -1,7 +1,11 @@
+
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Models\User;
+use App\Models\product;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,16 +28,13 @@ Route::middleware([
     })->name('dashboard');
 
 
-Route::get('/redirect', [HomeController:: class, 'redirect']);
+    route::get('/redirect', [HomeController::class,'redirect']);
 
+    route::get('/', [HomeController::class,'index']);
 
-Route::get('/', [HomeController:: class, 'index']);
+    route::get('/product', [AdminController::class,'product']);
 
-
-
-
-
-
+    route::post('/uploadproduct', [AdminController::class,'uploadproduct']);
 
 
 
