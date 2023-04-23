@@ -2,10 +2,11 @@
 <?php
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Models\User;
-use App\Models\product;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
