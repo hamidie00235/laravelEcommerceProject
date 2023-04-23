@@ -11,18 +11,19 @@
           @foreach ($data  as $product)
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img  height="300" width="150" src="/productimage/{{product->image}}" ></a>
+              <a href="#"><img height="300" width="150" src="/productimage/{{$product->image}}" alt=""></a>
               <div class="down-content">
                 <a href="#"><h4></h{{$product->title}}4></a>
-                <h6>${{product->price}}</h6>
+                <h6>${{$product->price}}</h6>
                 <p> {{$product->description}}</p>
                 
-                <span>Reviews (32)</span>
               </div>
             </div>
           </div>
 @endforeach
 
+<div class="d-flex justify-content-center">
+  {!!$data->links() !!}
         </div>
       </div>
     </div>

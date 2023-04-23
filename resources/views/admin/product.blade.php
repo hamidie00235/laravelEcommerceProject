@@ -32,12 +32,11 @@ label{
 
 
             <div class="alert alert-success">
-            <button type="button" class="close" data-dismiss="alert" >x</button>
+            <button type="button" class="close" data-dismiss="alert"
+            >x</button>
 
-            {{(session()->get('message'))}}
-
-
-            </div>
+            {{session()->get('message')}}
+</div>
             @endif
 
 
