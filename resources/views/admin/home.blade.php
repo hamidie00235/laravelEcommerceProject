@@ -10,6 +10,6 @@
         <!-- partial -->
         @include('admin.body')
           <!-- partial -->
-          @include('admin.css')
+          @include('admin.script')
   </body>
 </html>
