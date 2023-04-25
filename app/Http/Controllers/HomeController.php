@@ -41,4 +41,20 @@ public function index()
         return view('user.home',compact('data'));
     }
     }
+
+    public function search(Request $request)
+    {
+        $search = $request->search;
+        if($search =(''))
+        {
+
+            $data =product::paginate(3);
+            return view('user.home',compact('data'));
+        }
+
+
+        $data=product::where('title','like','%'.$search.'%')->get();
+
+        return view('user.home',compact('data'));
+    }
 }

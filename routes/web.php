@@ -55,4 +55,7 @@ Route::middleware([
 
 
 
+    route::get('/search', [HomeController::class,'search']);
+
+
 });
