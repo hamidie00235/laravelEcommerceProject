@@ -2,7 +2,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="section-heading">
               <h2>Latest Products</h2>
               <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
             </div>
