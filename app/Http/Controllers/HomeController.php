@@ -70,11 +70,11 @@ public function index()
         $cart->phone=$user->phone;
         $cart->address=$user->address;
 
-        $cart->product_title=$product-title;
+        $cart->product_title=$product->title;
         $cart->price=$product->price;
         $cart->quantity=$request->quantity;
-        $cart-
-        return redirect()->back();
+        $cart->save();
+        return redirect()->back()->with('message','Product added successfully');
     }
    else
    {
