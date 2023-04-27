@@ -31,13 +31,13 @@ label{
 
 
 
-            <div class="alert alert-success">
-            <button type="button" class="close" data-dismiss="alert"
-            >x</button>
+<div class="alert alert-success">
+<button type="button" class="close" data-dismiss="alert"
+>x</button>
 
-            {{session()->get('message')}}
+{{session()->get('message')}}
 </div>
-            @endif
+@endif
 
 
 
