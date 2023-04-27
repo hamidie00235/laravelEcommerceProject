@@ -63,6 +63,8 @@ Route::middleware([
 
 
     route::get('/showcart', [HomeController::class,'showcart']);
+    
+    route::get('/delete/{id}', [HomeController::class,'deletecart']);
 
 
 });
