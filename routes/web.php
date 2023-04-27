@@ -67,4 +67,7 @@ Route::middleware([
     route::get('/delete/{id}', [HomeController::class,'deletecart']);
 
 
+    route::post('/order', [HomeController::class,'confirmorder']);
+
+
 });
