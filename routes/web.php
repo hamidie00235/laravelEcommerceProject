@@ -70,4 +70,10 @@ Route::middleware([
     route::post('/order', [HomeController::class,'confirmorder']);
 
 
+    route::get('/showorder', [AdminController::class,'showorder']);
+
+
+    route::get('/updatestatus/{id}', [AdminController::class,'updatestatus']);
+
+
 });
