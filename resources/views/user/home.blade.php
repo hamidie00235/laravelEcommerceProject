@@ -117,8 +117,9 @@ https://templatemo.com/tm-546-sixteen-clothing
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
+            <h4>
+              with Hamidie E-Commerce Best Offer</h4>
+            <h2>New saison New Arrivals  On Sale</h2>
           </div>
         </div>
         <div class="banner-item-02">
